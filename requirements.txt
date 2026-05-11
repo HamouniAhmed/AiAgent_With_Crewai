@@ -1,0 +1,4 @@
+crewai[tools]>=0.95.0
+agentops
+python-dotenv
+jupyter

@@ -1,1 +1,310 @@
-2026-09-08 16:32:34,659 - INFO - You're on the agentops free plan 🤔
+2026-09-11 15:21:26,045 - INFO - You're on the agentops free plan 🤔
+2026-09-11 15:21:45,195 - ERROR - Error in span groq/llama-3.3-70b-versatile.llm: <failed_attempts>
+
+<generation number="1">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</last_exception>
+2026-09-11 15:21:45,612 - ERROR - Error in span groq/llama-3.3-70b-versatile.llm: <failed_attempts>
+
+<generation number="1">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</last_exception>
+2026-09-11 15:21:46,002 - ERROR - Error in span groq/llama-3.3-70b-versatile.llm: <failed_attempts>
+
+<generation number="1">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</last_exception>
+2026-09-11 15:21:46,049 - ERROR - Error in span Search Queries Recommendation Agent.agent: <failed_attempts>
+
+<generation number="1">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</last_exception>
+2026-09-11 15:21:46,077 - ERROR - Error in span Search Queries Recommendation Agent.agent: <failed_attempts>
+
+<generation number="1">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</last_exception>
+2026-09-11 15:21:46,107 - ERROR - Error in span Search Queries Recommendation Agent.agent: <failed_attempts>
+
+<generation number="1">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</last_exception>
+2026-09-11 15:21:46,145 - ERROR - Error in span rifland is looking to buy coffe machine for office at the best prices (value for a price strategy)
+the company target any of these websites to buy from : ['www.jumia.com.ma', 'www.electroplanet.ma', 'www.marjane.ma']
+the company want to search all available products on the internet to be compared later in another stage
+The stores must sell the product in Morocco
+Generate only 10 queries
+The search query must reach an ecommerce webpage for product, and not a blog or listing page..task: <failed_attempts>
+
+<generation number="1">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</last_exception>
+2026-09-11 15:21:46,196 - ERROR - Error in span crewai.workflow: <failed_attempts>
+
+<generation number="1">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+</last_exception>

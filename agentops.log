@@ -308,3 +308,29 @@ The search query must reach an ecommerce webpage for product, and not a blog or 
     litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
 
 </last_exception>
+2026-09-15 12:26:03,518 - ERROR - Error in span Search Queries Recommendation Agent.agent: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-15 12:26:03,537 - ERROR - Error in span Search Queries Recommendation Agent.agent: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-15 12:26:03,552 - ERROR - Error in span Search Queries Recommendation Agent.agent: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-15 12:26:03,584 - ERROR - Error in span rifland is looking to buy coffe machine for office at the best prices (value for a price strategy)
+the company target any of these websites to buy from : ['www.jumia.com.ma', 'www.electroplanet.ma', 'www.marjane.ma']
+the company want to search all available products on the internet to be compared later in another stage
+The stores must sell the product in Morocco
+Generate only 10 queries
+The search query must reach an ecommerce webpage for product, and not a blog or listing page..task: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-15 12:26:03,614 - ERROR - Error in span crewai.workflow: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-16 10:25:12,323 - ERROR - Error in span Search Engine Agent .agent: OPENAI_API_KEY is required
+2026-09-16 10:25:12,339 - ERROR - Error in span Search Engine Agent .agent: OPENAI_API_KEY is required
+2026-09-16 10:25:12,351 - ERROR - Error in span Search Engine Agent .agent: OPENAI_API_KEY is required
+2026-09-16 10:25:12,439 - ERROR - Error in span The task is to search for products based on the suggested search queries.
+You have to collect results from multipe search queries.
+Ignore any susbicious links or not an ecomerce single product website link.
+Ignore any search results with confidence score less than 0.2 .
+The search results will be used to compare prices of products from different websites..task: OPENAI_API_KEY is required
+2026-09-16 10:25:12,467 - ERROR - Error in span crewai.workflow: OPENAI_API_KEY is required
+2026-09-16 10:28:23,140 - ERROR - Error in span Search Engine Agent .agent: OPENAI_API_KEY is required
+2026-09-16 10:28:23,160 - ERROR - Error in span The task is to search for products based on the suggested search queries.
+You have to collect results from multipe search queries.
+Ignore any susbicious links or not an ecomerce single product website link.
+Ignore any search results with confidence score less than 0.2 .
+The search results will be used to compare prices of products from different websites..task: OPENAI_API_KEY is required
+2026-09-16 10:28:23,173 - ERROR - Error in span crewai.workflow: OPENAI_API_KEY is required

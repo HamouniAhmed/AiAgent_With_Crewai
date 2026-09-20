@@ -8,199 +8,86 @@
 [![Observability](https://img.shields.io/badge/Observability-AgentOps-black.svg)](https://agentops.ai/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An end-to-end multi-agent system built with [CrewAI](https://github.com/crewAIInc/crewAI) that automates product market research, web scraping, price comparison, and executive procurement report generation.
+A sequential multi-agent system built with [CrewAI](https://github.com/crewAIInc/crewAI) to automate product research, price comparison, web scraping, and decision-ready procurement reporting.
 
 ---
 
-##  Use Case & Problem Statement
+## Use Case
 
-### The Scenario
-A procurement employee or purchasing manager is tasked with finding the best quality-to-price products (e.g., office coffee machines) across multiple e-commerce websites and producing a comprehensive report to support executive purchasing decisions.
+A company needs to find the best quality/price products (e.g., office coffee machines) across e-commerce sites and generate a report to support purchasing decisions.
 
-### The Traditional Human Workflow
-```
-[Product Requirements] ──> [Manual Web Search] ──> [Visit E-Commerce Links] ──> [Extract Prices & Specs] ──> [Draft Comparison & Report]
-```
-1. **Query Formulation**: Manually brainstorm search terms for different retailers.
-2. **Web Searching**: Browse through pages of search results, sifting through irrelevant blogs, ads, and category listings.
-3. **Data Collection & Extraction**: Open numerous product tabs, copy prices, discounts, specifications, and warranty details into spreadsheets.
-4. **Analysis & Decision Report**: Manually calculate cost differences, rank recommendations, and draft a procurement report for stakeholders.
-
-**Pain points**: Time-consuming, error-prone, inconsistent formatting, and unscalable when analyzing dozens of products across multiple marketplaces.
-
-![Human Process vs. Multi-Agent System](docs/figures/01-processus-humain-vs-multi-agents.svg)
+- **Human Workflow**: List items ➔ Search web ➔ Collect prices & specs ➔ Write decision report.
+- **Agent Solution**: A sequential 4-agent pipeline where each task has a dedicated agent with strict schema validation.
 
 ---
 
-## 💡 The Multi-Agent Solution
-
-Rather than relying on a single prompt or monolithic LLM, this project implements a **Sequential Multi-Agent Architecture** adhering to the *Separation of Concerns* principle. 
-
-Each discrete stage is delegated to a dedicated AI agent with strict schemas (via Pydantic), specialized tools, and precise quality controls:
-
-![Multi-Agent Architecture and Quality Gates](docs/figures/02-architecture-sequentielle-controles.svg)
-
-### Pipeline Flowchart
+## Sequential Flow
 
 ```mermaid
-flowchart TD
-    subgraph Inputs["1. System Inputs"]
-        A1["Target Product: Coffee Machine"]
-        A2["Target Retailers: Jumia, Electroplanet, Marjane"]
-        A3["Company Context & Criteria"]
-    end
-
-    subgraph Pipeline["2. Sequential Multi-Agent Workflow"]
-        direction TB
-
-        AgentA[" Agent A: Search Queries Recommendation Agent<br/><i>Generates optimal e-commerce search keywords</i>"]
-        TaskA[/" Step 1: Suggested Search Queries (JSON)"/]
-
-        AgentB[" Agent B: Search Engine Agent<br/><i>Tool: Tavily Search API</i>"]
-        TaskB[/"Step 2: Validated Product URLs (JSON)"/]
-
-        AgentC[" Agent C: Web Scraping Agent<br/><i>Tool: ScrapeGraphAI</i>"]
-        TaskC[/" Step 3: Extracted Specs, Prices & Rankings (JSON)"/]
-
-        AgentD[" Agent D: Procurement Report Author Agent<br/><i>Synthesizes data & company context</i>"]
-        TaskD[/" Step 4: Executive Procurement Report (HTML/Bootstrap)"/]
-
-        AgentA --> TaskA
-        TaskA --> AgentB
-        AgentB --> TaskB
-        TaskB --> AgentC
-        TaskC --> AgentD
-        AgentD --> TaskD
-    end
-
-    subgraph Observability["3. Governance & Monitoring"]
-        AgentOps[" AgentOps Session Tracking & Cost Auditing"]
-    end
-
-    Inputs --> AgentA
-    Pipeline -.-> Observability
-
-    style AgentA fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
-    style AgentB fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    style AgentC fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
-    style AgentD fill:#fff3e0,stroke:#e65100,stroke-width:2px;
-    style TaskD fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px;
+flowchart LR
+    In["Product Brief<br/>& Target Sites"] --> A["Agent A<br/><b>Search Strategy</b><br/>(Query Generator)"]
+    A -->|"step_1_queries.json"| B["Agent B<br/><b>Search Engine</b><br/>(Tavily Tool)"]
+    B -->|"step_2_results.json"| C["Agent C<br/><b>Web Scraper</b><br/>(ScrapeGraphAI)"]
+    C -->|"step_3_results.json"| D["Agent D<br/><b>Report Author</b><br/>(HTML Synthesis)"]
+    D --> Out[/"step_4_procurement_report.html"/]
 ```
 
 ---
 
-##  Detailed Agent Breakdown
+## Agents Overview
 
-| Agent | Role & Objective | Tools / Tech | Output Artifact |
+| Agent | Task | Tool | Output |
 |---|---|---|---|
-| **Agent A: Search Queries Recommendation Agent** | Analyzes the product requirements and target storefronts to generate diverse, high-intent e-commerce search queries. | Google Gemini, Pydantic validation | `ai-agents-output/step_1_Suggested_Search_Queries.json` |
-| **Agent B: Search Engine Agent** | Executes web searches based on Agent A's queries, filters out blog posts/aggregators, and retains single-product store links meeting confidence thresholds. | Tavily Search Client (`tavily-python`) | `ai-agents-output/step_2_search results.json` |
-| **Agent C: Web Scraping Agent** | Navigates to individual product pages to extract structured product information (current price, original price, discount, key specs, and rank). | ScrapeGraphAI (`scrapegraph-py`), Pydantic | `ai-agents-output/step_3_search_results.json` |
-| **Agent D: Procurement Report Author Agent** | Combines company purchasing requirements, product rankings, and scraped specifications into a formatted, executive-ready HTML procurement dossier. | Google Gemini, Bootstrap 5 UI Framework, Company Knowledge Source | `ai-agents-output/step_4_procuremnt_report.html` |
+| **Agent A: Search Queries** | Generate targeted e-commerce search keywords | Gemini LLM | `step_1_Suggested_Search_Queries.json` |
+| **Agent B: Search Engine** | Search the web for single-product pages | Tavily API | `step_2_search results.json` |
+| **Agent C: Scraping Agent** | Extract prices, specs, discounts, and ranks | ScrapeGraphAI | `step_3_search_results.json` |
+| **Agent D: Report Author** | Synthesize data into a Bootstrap procurement report | Gemini LLM | `step_4_procuremnt_report.html` |
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 Ai_agents_with_Crewai/
-├── ai_agents.ipynb                # Main Jupyter Notebook containing agent definitions & pipeline execution
-├── ai-agents-output/              # Step-by-step intermediate and final artifacts
-│   ├── step_1_Suggested_Search_Queries.json   # Generated search queries
-│   ├── step_2_search results.json             # Single-product URLs from Tavily search
-│   ├── step_3_search_results.json             # Deep-scraped product specs & rankings
-│   └── step_4_procuremnt_report.html          # Interactive HTML/Bootstrap procurement report
-├── requirements.txt               # Project dependencies
-├── .env.example                   # Template for environment variables and API keys
-├── .env                           # Secret API keys (not committed)
-└── agentops.log                   # Local session logs from AgentOps observability
+├── ai_agents.ipynb                # Main notebook with agents & pipeline
+├── ai-agents-output/              # Step-by-step pipeline outputs
+│   ├── step_1_Suggested_Search_Queries.json
+│   ├── step_2_search results.json
+│   ├── step_3_search_results.json
+│   └── step_4_procuremnt_report.html
+├── requirements.txt               # Dependencies
+├── .env.example                   # API keys template
+└── agentops.log                   # AgentOps monitoring logs
 ```
 
 ---
 
-##  Prerequisites & Installation
+## Quick Start
 
-### Requirements
-- **Python**: `3.10`, `3.11`, or `3.12` *(Note: CrewAI 0.95.0 is incompatible with Python 3.13+)*
-- API Keys:
-  - [Google Gemini API Key](https://aistudio.google.com/) (LLM and embedding services)
-  - [Tavily Search API Key](https://tavily.com/) (Web searching)
-  - [ScrapeGraphAI API Key](https://scrapegraphai.com/) (AI-powered web scraping)
-  - [AgentOps API Key](https://agentops.ai/) (Session observability and tracing)
-
-### Step-by-Step Setup
-
-**1. Clone the repository**
+**1. Clone & install**
 ```bash
 git clone https://github.com/HamouniAhmed/AiAgent_With_Crewai.git
 cd Ai_agents_with_Crewai
-```
-
-**2. Create and activate a virtual environment**
-```bash
-# On Windows
 python -m venv venv
-venv\Scripts\activate
-
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-```
-
-**3. Install dependencies**
-```bash
+# Windows: venv\Scripts\activate | Unix: source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**4. Configure environment variables**
-
-Create a `.env` file in the root directory:
+**2. Configure `.env`**
 ```ini
-# AgentOps - https://agentops.ai
 AGENTOPS_API_KEY="your_agentops_key"
-
-# Google Gemini - https://aistudio.google.com/apikey
 GEMINI_API_KEY="your_gemini_key"
-
-# Tavily Search - https://tavily.com
 tavily_api="your_tavily_key"
-
-# ScrapeGraphAI - https://scrapegraphai.com
 scrapegraph_api="your_scrapegraph_key"
 ```
 
-**5. Launch and Run**
+**3. Run the notebook**
 ```bash
 jupyter notebook ai_agents.ipynb
 ```
-Run the notebook cells sequentially. The crew will kickoff the workflow, query the web, extract product details, and produce the final procurement report in `ai-agents-output/step_4_procuremnt_report.html`.
 
 ---
 
-##  Key Dependencies
+## License
 
-| Package | Version | Purpose |
-|---|---|---|
-| `crewai[tools]` | `>=0.95.0` | Autonomous multi-agent orchestration framework |
-| `google-genai` | Latest | Google Gemini SDK for LLM reasoning and text embeddings |
-| `tavily-python` | Latest | Search engine API optimized for autonomous agents |
-| `scrapegraph-py` | Latest | LLM-driven web scraping pipeline for structured data extraction |
-| `pydantic` | Latest | Strict schema enforcement and output serialization |
-| `agentops` | Latest | Multi-agent session telemetry, tool call tracking, and latency profiling |
-| `python-dotenv` | Latest | Secure environment variable configuration |
-
----
-
-##  Observability & Quality Assurance
-
-This system integrates with **AgentOps** for full visibility across the agent lifecycle:
-- **Execution Tracking**: Monitor task completion latency and failure rates.
-- **Tool Tracing**: Inspect raw Tavily search queries and ScrapeGraphAI extraction schemas.
-- **Token & Cost Auditing**: Monitor LLM token consumption across all 4 agents.
-- **Audit Logs**: Stored locally in `agentops.log` and accessible via the AgentOps dashboard.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+MIT License.

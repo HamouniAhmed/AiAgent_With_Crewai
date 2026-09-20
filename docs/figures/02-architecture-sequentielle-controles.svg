@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Architecture séquentielle et points de contrôle du système multi-agents</title>
+  <desc id="desc">Flux détaillé du besoin d'achat jusqu'au rapport de décision avec agents, outils, artefacts et validations humaines.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef2ff"/></linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0891b2"/><stop offset=".5" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+    <filter id="s2" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#334155" flood-opacity=".16"/></filter>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#2563eb"/></marker>
+    <style>.f{font-family:Inter,Segoe UI,Arial,sans-serif}.t{font-size:43px;font-weight:760;fill:#0f172a}.st{font-size:20px;fill:#475569}.k{font-size:14px;font-weight:750;letter-spacing:1.2px}.h{font-size:22px;font-weight:740}.b{font-size:16px;fill:#475569}.sm{font-size:14px;fill:#64748b}.tag{font-size:13px;font-weight:650}.gate{font-size:15px;font-weight:700}</style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg2)"/>
+  <g class="f">
+    <rect x="0" y="0" width="1600" height="12" fill="url(#flow)"/>
+    <text x="74" y="78" class="t">Architecture séquentielle et contrôle qualité</text>
+    <text x="74" y="112" class="st">Chaque agent transforme un livrable vérifiable avant de le transmettre à l’étape suivante.</text>
+
+    <g filter="url(#s2)">
+      <rect x="74" y="164" width="232" height="560" rx="26" fill="#0f172a"/>
+    </g>
+    <text x="104" y="210" class="k" fill="#67e8f9">ENTRÉE MÉTIER</text>
+    <text x="104" y="258" class="h" fill="#f8fafc">Brief d’achat</text>
+    <text x="104" y="298" class="b" style="fill:#cbd5e1"><tspan x="104">• Liste des articles</tspan><tspan x="104" dy="31">• Quantités</tspan><tspan x="104" dy="31">• Budget</tspan><tspan x="104" dy="31">• Critères qualité</tspan><tspan x="104" dy="31">• Zone géographique</tspan><tspan x="104" dy="31">• Délai souhaité</tspan></text>
+    <rect x="104" y="507" width="172" height="98" rx="18" fill="#16263c" stroke="#334155"/>
+    <text x="123" y="537" class="tag" fill="#94a3b8">EXEMPLE DU PROJET</text>
+    <text x="123" y="568" class="b" style="fill:#e2e8f0">Machines à café</text>
+    <text x="123" y="592" class="sm" style="fill:#94a3b8">Bureaux • Maroc</text>
+    <text x="104" y="679" class="sm" style="fill:#94a3b8">Responsable : acheteur</text>
+
+    <path d="M306 444 H350" stroke="#2563eb" stroke-width="4" marker-end="url(#a2)"/>
+
+    <g filter="url(#s2)">
+      <rect x="358" y="164" width="254" height="560" rx="26" fill="#ffffff" stroke="#bae6fd" stroke-width="2"/>
+      <rect x="632" y="164" width="254" height="560" rx="26" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+      <rect x="906" y="164" width="254" height="560" rx="26" fill="#ffffff" stroke="#c7d2fe" stroke-width="2"/>
+      <rect x="1180" y="164" width="346" height="560" rx="26" fill="#ffffff" stroke="#ddd6fe" stroke-width="2"/>
+    </g>
+
+    <g>
+      <circle cx="403" cy="213" r="24" fill="#0891b2"/><text x="403" y="221" text-anchor="middle" class="h" fill="#fff">A</text>
+      <text x="441" y="206" class="k" fill="#0891b2">STRATÉGIE</text><text x="441" y="231" class="h" fill="#0f172a">Requêtes</text>
+      <line x1="385" y1="261" x2="585" y2="261" stroke="#e2e8f0"/>
+      <text x="385" y="295" class="k" fill="#64748b">MISSION</text>
+      <text x="385" y="327" class="b"><tspan x="385">Traduire le brief en</tspan><tspan x="385" dy="25">requêtes de recherche</tspan><tspan x="385" dy="25">précises et diversifiées.</tspan></text>
+      <text x="385" y="425" class="k" fill="#64748b">CONTRÔLES</text>
+      <text x="385" y="456" class="b"><tspan x="385">Couverture vendeurs</tspan><tspan x="385" dy="25">Marques et variantes</tspan><tspan x="385" dy="25">Contexte local</tspan></text>
+      <rect x="385" y="560" width="200" height="111" rx="17" fill="#ecfeff"/>
+      <text x="403" y="590" class="tag" fill="#0e7490">ARTEFACT 01</text>
+      <text x="403" y="621" class="b" fill="#164e63">search_queries.json</text>
+      <text x="403" y="647" class="sm" fill="#0e7490">Liste de mots-clés</text>
+    </g>
+
+    <g>
+      <circle cx="677" cy="213" r="24" fill="#2563eb"/><text x="677" y="221" text-anchor="middle" class="h" fill="#fff">B</text>
+      <text x="715" y="206" class="k" fill="#2563eb">DÉCOUVERTE</text><text x="715" y="231" class="h" fill="#0f172a">Recherche Web</text>
+      <line x1="659" y1="261" x2="859" y2="261" stroke="#e2e8f0"/>
+      <text x="659" y="295" class="k" fill="#64748b">MISSION</text>
+      <text x="659" y="327" class="b"><tspan x="659">Lancer les requêtes et</tspan><tspan x="659" dy="25">identifier les pages produit</tspan><tspan x="659" dy="25">les plus pertinentes.</tspan></text>
+      <text x="659" y="425" class="k" fill="#64748b">OUTIL</text>
+      <rect x="659" y="443" width="89" height="31" rx="15" fill="#dbeafe"/><text x="703" y="464" text-anchor="middle" class="tag" fill="#1d4ed8">TAVILY</text>
+      <text x="659" y="507" class="b"><tspan x="659">URL • titre • extrait</tspan><tspan x="659" dy="25">score de pertinence</tspan></text>
+      <rect x="659" y="560" width="200" height="111" rx="17" fill="#eff6ff"/>
+      <text x="677" y="590" class="tag" fill="#1d4ed8">ARTEFACT 02</text>
+      <text x="677" y="621" class="b" fill="#1e3a8a">web_results.json</text>
+      <text x="677" y="647" class="sm" fill="#2563eb">Pages candidates</text>
+    </g>
+
+    <g>
+      <circle cx="951" cy="213" r="24" fill="#4f46e5"/><text x="951" y="221" text-anchor="middle" class="h" fill="#fff">C</text>
+      <text x="989" y="206" class="k" fill="#4f46e5">EXTRACTION</text><text x="989" y="231" class="h" style="font-size:19px" fill="#0f172a">Données produit</text>
+      <line x1="933" y1="261" x2="1133" y2="261" stroke="#e2e8f0"/>
+      <text x="933" y="295" class="k" fill="#64748b">MISSION</text>
+      <text x="933" y="327" class="b"><tspan x="933">Lire les pages, extraire</tspan><tspan x="933" dy="25">et normaliser les champs</tspan><tspan x="933" dy="25">utiles à la comparaison.</tspan></text>
+      <text x="933" y="425" class="k" fill="#64748b">OUTIL</text>
+      <rect x="933" y="443" width="157" height="31" rx="15" fill="#e0e7ff"/><text x="1011" y="464" text-anchor="middle" class="tag" fill="#4338ca">SCRAPEGRAPH.AI</text>
+      <text x="933" y="507" class="b"><tspan x="933">Prix • stock • specs</tspan><tspan x="933" dy="25">livraison • garantie</tspan></text>
+      <rect x="933" y="560" width="200" height="111" rx="17" fill="#eef2ff"/>
+      <text x="951" y="590" class="tag" fill="#4338ca">ARTEFACT 03</text>
+      <text x="951" y="621" class="b" fill="#312e81">products.json</text>
+      <text x="951" y="647" class="sm" fill="#4f46e5">Schéma homogène</text>
+    </g>
+
+    <g>
+      <circle cx="1225" cy="213" r="24" fill="#7c3aed"/><text x="1225" y="221" text-anchor="middle" class="h" fill="#fff">D</text>
+      <text x="1263" y="206" class="k" fill="#7c3aed">SYNTHÈSE</text><text x="1263" y="231" class="h" fill="#0f172a">Rapport décisionnel</text>
+      <line x1="1207" y1="261" x2="1499" y2="261" stroke="#e2e8f0"/>
+      <text x="1207" y="295" class="k" fill="#64748b">MISSION</text>
+      <text x="1207" y="327" class="b"><tspan x="1207">Comparer qualité / prix, signaler</tspan><tspan x="1207" dy="25">les données manquantes et</tspan><tspan x="1207" dy="25">recommander les meilleures options.</tspan></text>
+      <text x="1207" y="425" class="k" fill="#64748b">CONTENU DU RAPPORT</text>
+      <text x="1207" y="456" class="b"><tspan x="1207">Résumé exécutif • tableau comparatif</tspan><tspan x="1207" dy="25">avantages / limites • risques</tspan><tspan x="1207" dy="25">recommandation et sources</tspan></text>
+      <rect x="1207" y="560" width="292" height="111" rx="17" fill="#f5f3ff"/>
+      <text x="1225" y="590" class="tag" fill="#6d28d9">LIVRABLE FINAL</text>
+      <text x="1225" y="621" class="b" fill="#4c1d95">procurement_report.html</text>
+      <text x="1225" y="647" class="sm" fill="#7c3aed">Rapport visuel et actionnable</text>
+    </g>
+
+    <path d="M612 444 H624 M886 444 H898 M1160 444 H1172" stroke="#2563eb" stroke-width="4" marker-end="url(#a2)"/>
+
+    <g>
+      <rect x="368" y="755" width="224" height="58" rx="18" fill="#cffafe" stroke="#67e8f9"/>
+      <text x="480" y="780" text-anchor="middle" class="gate" fill="#155e75">CONTRÔLE 1</text><text x="480" y="801" text-anchor="middle" class="sm" fill="#0e7490">Valider la stratégie</text>
+      <rect x="774" y="755" width="266" height="58" rx="18" fill="#dbeafe" stroke="#93c5fd"/>
+      <text x="907" y="780" text-anchor="middle" class="gate" fill="#1e40af">CONTRÔLE 2</text><text x="907" y="801" text-anchor="middle" class="sm" fill="#1d4ed8">Vérifier données et sources</text>
+      <rect x="1210" y="755" width="286" height="58" rx="18" fill="#ede9fe" stroke="#c4b5fd"/>
+      <text x="1353" y="780" text-anchor="middle" class="gate" fill="#5b21b6">DÉCISION HUMAINE</text><text x="1353" y="801" text-anchor="middle" class="sm" fill="#6d28d9">Approuver l’achat final</text>
+      <path d="M480 755 V726 M907 755 V726 M1353 755 V726" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 5"/>
+    </g>
+
+    <rect x="74" y="848" width="1452" height="1" fill="#cbd5e1"/>
+    <text x="74" y="877" class="sm">Principe clé : automatiser la collecte et l’analyse, tout en gardant la validation et la décision sous contrôle humain.</text>
+    <text x="1526" y="877" text-anchor="end" class="sm">CrewAI • Tavily • ScrapeGraphAI</text>
+  </g>
+</svg>

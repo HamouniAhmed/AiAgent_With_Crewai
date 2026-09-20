@@ -1,0 +1,41 @@
+{
+  "products": [
+    {
+      "page_url": "https://www.electroplanet.ma/p3044711-pixie-mch-grn-c62-xe-nespresso.html",
+      "product_title": "PIXIE MCH GRN C62 XE NESPRESSO",
+      "product_image_url": "https://prod2-media.electroplanet.ma/media/catalog/product/cache/fe7218fa206f7a550a07f49b9ea052d6/3/0/3044711-cb-24880_2_1.png",
+      "product_current_price": 1799.0,
+      "product_original_price": 2299.0,
+      "product_disount_percentage": 21.0,
+      "product_specs": [
+        {
+          "specification_name": "Marque",
+          "specification_value": "NESPRESSO"
+        },
+        {
+          "specification_name": "Reference fournisseur",
+          "specification_value": "PIXIE MCH GRN C62 XE NESPRESSO"
+        },
+        {
+          "specification_name": "Code",
+          "specification_value": "3044711"
+        },
+        {
+          "specification_name": "BUSE VAPEUR",
+          "specification_value": "Non"
+        },
+        {
+          "specification_name": "PROGRAMABLE",
+          "specification_value": "Non"
+        }
+      ],
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Significant discount of 21% makes it a competitive entry-level Nespresso machine.",
+        "Compact design suitable for office environments with limited space.",
+        "Lacks advanced features like a steam nozzle or programmable settings, which might be a drawback for users seeking variety.",
+        "Nespresso brand reliability and widespread capsule availability are strong pros for corporate procurement."
+      ]
+    }
+  ]
+}

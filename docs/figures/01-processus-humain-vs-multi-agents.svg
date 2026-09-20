@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Du processus humain au workflow multi-agents de procurement</title>
+  <desc id="desc">Comparaison entre le processus manuel de recherche produit et une chaîne séquentielle de quatre agents spécialisés.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071426"/>
+      <stop offset="1" stop-color="#102a43"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#020617" flood-opacity=".34"/>
+    </filter>
+    <marker id="arrowMuted" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#64748b"/>
+    </marker>
+    <marker id="arrowBright" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#22d3ee"/>
+    </marker>
+    <style>
+      .font{font-family:Inter,Segoe UI,Arial,sans-serif}.title{font-size:48px;font-weight:750;fill:#f8fafc}.subtitle{font-size:21px;fill:#9fb3c8}.section{font-size:22px;font-weight:700;letter-spacing:2px}.cardTitle{font-size:23px;font-weight:700}.body{font-size:17px}.small{font-size:15px}.pill{font-size:15px;font-weight:650;letter-spacing:.5px}.num{font-size:20px;font-weight:800}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1450" cy="30" r="300" fill="#22d3ee" opacity=".045"/>
+  <circle cx="105" cy="875" r="260" fill="#8b5cf6" opacity=".06"/>
+
+  <g class="font">
+    <rect x="70" y="56" width="8" height="94" rx="4" fill="url(#accent)"/>
+    <text x="103" y="99" class="title">Recherche d’achats assistée par IA</text>
+    <text x="103" y="136" class="subtitle">Trouver le meilleur compromis qualité / prix et produire une recommandation traçable</text>
+
+    <text x="75" y="220" class="section" fill="#94a3b8">PROCESSUS HUMAIN ACTUEL</text>
+    <g filter="url(#shadow)">
+      <rect x="75" y="250" width="330" height="166" rx="24" fill="#16283c" stroke="#334155"/>
+      <rect x="430" y="250" width="330" height="166" rx="24" fill="#16283c" stroke="#334155"/>
+      <rect x="785" y="250" width="330" height="166" rx="24" fill="#16283c" stroke="#334155"/>
+      <rect x="1140" y="250" width="385" height="166" rx="24" fill="#16283c" stroke="#334155"/>
+    </g>
+    <g fill="#cbd5e1">
+      <circle cx="118" cy="294" r="22" fill="#334155"/><text x="111" y="301" class="num">1</text>
+      <text x="151" y="301" class="cardTitle">Recevoir la liste</text>
+      <text x="111" y="344" class="body"><tspan x="111">Produits, quantités, budget</tspan><tspan x="111" dy="27">et critères métier</tspan></text>
+      <circle cx="473" cy="294" r="22" fill="#334155"/><text x="466" y="301" class="num">2</text>
+      <text x="506" y="301" class="cardTitle">Rechercher sur le Web</text>
+      <text x="466" y="344" class="body"><tspan x="466">Explorer plusieurs vendeurs</tspan><tspan x="466" dy="27">et comparer les offres</tspan></text>
+      <circle cx="828" cy="294" r="22" fill="#334155"/><text x="821" y="301" class="num">3</text>
+      <text x="861" y="301" class="cardTitle">Collecter les données</text>
+      <text x="821" y="344" class="body"><tspan x="821">Prix, spécifications, stock,</tspan><tspan x="821" dy="27">livraison et garantie</tspan></text>
+      <circle cx="1183" cy="294" r="22" fill="#334155"/><text x="1176" y="301" class="num">4</text>
+      <text x="1216" y="301" class="cardTitle">Rédiger le rapport</text>
+      <text x="1176" y="344" class="body"><tspan x="1176">Classer les options et justifier</tspan><tspan x="1176" dy="27">une décision d’achat</tspan></text>
+    </g>
+    <path d="M405 333 H422 M760 333 H777 M1115 333 H1132" stroke="#64748b" stroke-width="4" marker-end="url(#arrowMuted)"/>
+
+    <g>
+      <rect x="586" y="447" width="428" height="50" rx="25" fill="#0b2137" stroke="#22d3ee" stroke-opacity=".55"/>
+      <text x="800" y="478" text-anchor="middle" class="pill" fill="#67e8f9">AUTOMATISER • SPÉCIALISER • CONTRÔLER</text>
+    </g>
+
+    <text x="75" y="557" class="section" fill="#67e8f9">SOLUTION : CHAÎNE SÉQUENTIELLE MULTI-AGENTS</text>
+    <g filter="url(#shadow)">
+      <rect x="75" y="590" width="330" height="208" rx="24" fill="#0d3441" stroke="#22d3ee" stroke-width="2"/>
+      <rect x="430" y="590" width="330" height="208" rx="24" fill="#122f4a" stroke="#38bdf8" stroke-width="2"/>
+      <rect x="785" y="590" width="330" height="208" rx="24" fill="#20284b" stroke="#818cf8" stroke-width="2"/>
+      <rect x="1140" y="590" width="385" height="208" rx="24" fill="#302449" stroke="#a78bfa" stroke-width="2"/>
+    </g>
+    <g>
+      <rect x="101" y="616" width="94" height="31" rx="15" fill="#164e63"/><text x="148" y="637" text-anchor="middle" class="pill" fill="#a5f3fc">AGENT A</text>
+      <text x="101" y="684" class="cardTitle" fill="#ecfeff">Stratège de recherche</text>
+      <text x="101" y="718" class="body" fill="#bae6fd"><tspan x="101">Génère les requêtes ciblées</tspan><tspan x="101" dy="25">à partir du besoin d’achat.</tspan></text>
+      <text x="101" y="780" class="small" fill="#67e8f9">SORTIE  →  Liste de mots-clés</text>
+
+      <rect x="456" y="616" width="94" height="31" rx="15" fill="#0c4a6e"/><text x="503" y="637" text-anchor="middle" class="pill" fill="#bae6fd">AGENT B</text>
+      <text x="456" y="684" class="cardTitle" fill="#f0f9ff">Moteur de recherche</text>
+      <text x="456" y="718" class="body" fill="#bae6fd"><tspan x="456">Interroge le Web avec Tavily</tspan><tspan x="456" dy="25">et sélectionne les résultats.</tspan></text>
+      <text x="456" y="780" class="small" fill="#7dd3fc">SORTIE  →  Pages pertinentes</text>
+
+      <rect x="811" y="616" width="94" height="31" rx="15" fill="#3730a3"/><text x="858" y="637" text-anchor="middle" class="pill" fill="#e0e7ff">AGENT C</text>
+      <text x="811" y="684" class="cardTitle" fill="#eef2ff">Extracteur de données</text>
+      <text x="811" y="718" class="body" fill="#c7d2fe"><tspan x="811">Scrape les pages et normalise</tspan><tspan x="811" dy="25">les détails avec ScrapeGraphAI.</tspan></text>
+      <text x="811" y="780" class="small" fill="#a5b4fc">SORTIE  →  Données structurées</text>
+
+      <rect x="1166" y="616" width="94" height="31" rx="15" fill="#5b21b6"/><text x="1213" y="637" text-anchor="middle" class="pill" fill="#ede9fe">AGENT D</text>
+      <text x="1166" y="684" class="cardTitle" fill="#faf5ff">Auteur du rapport</text>
+      <text x="1166" y="718" class="body" fill="#ddd6fe"><tspan x="1166">Compare, pondère et formule</tspan><tspan x="1166" dy="25">une recommandation argumentée.</tspan></text>
+      <text x="1166" y="780" class="small" fill="#c4b5fd">SORTIE  →  Rapport visuel HTML</text>
+    </g>
+    <path d="M405 694 H422 M760 694 H777 M1115 694 H1132" stroke="#22d3ee" stroke-width="4" marker-end="url(#arrowBright)"/>
+
+    <g transform="translate(75 840)">
+      <circle cx="8" cy="-5" r="8" fill="#22d3ee"/><text x="27" y="1" class="small" fill="#cbd5e1">Décision plus rapide</text>
+      <circle cx="225" cy="-5" r="8" fill="#38bdf8"/><text x="244" y="1" class="small" fill="#cbd5e1">Sources traçables</text>
+      <circle cx="434" cy="-5" r="8" fill="#818cf8"/><text x="453" y="1" class="small" fill="#cbd5e1">Données comparables</text>
+      <circle cx="669" cy="-5" r="8" fill="#a78bfa"/><text x="688" y="1" class="small" fill="#cbd5e1">Contrôle humain conservé</text>
+      <text x="1450" y="1" text-anchor="end" class="small" fill="#64748b">CrewAI • Procurement intelligence</text>
+    </g>
+  </g>
+</svg>

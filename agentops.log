@@ -334,3 +334,97 @@ Ignore any susbicious links or not an ecomerce single product website link.
 Ignore any search results with confidence score less than 0.2 .
 The search results will be used to compare prices of products from different websites..task: OPENAI_API_KEY is required
 2026-09-16 10:28:23,173 - ERROR - Error in span crewai.workflow: OPENAI_API_KEY is required
+2026-09-18 10:55:39,872 - ERROR - Error in span web scraping agent.agent: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.3.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.3.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-18 10:55:39,885 - ERROR - Error in span web scraping agent.agent: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.3.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.3.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-18 10:55:39,894 - ERROR - Error in span web scraping agent.agent: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.3.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.3.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-18 10:55:39,914 - ERROR - Error in span The task is to extract product details from any ecommerce store page url.
+The task has to collect results from multiple pages urls.task: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.3.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.3.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-18 10:55:39,931 - ERROR - Error in span crewai.workflow: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.3.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.3.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-19 09:08:16,914 - ERROR - Error in span web scraping agent.agent: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.0.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.0.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-19 09:08:16,991 - ERROR - Error in span The task is to extract product details from any ecommerce store page url.
+The task has to collect results from multiple pages urls.task: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.0.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.0.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-19 09:08:17,054 - ERROR - Error in span crewai.workflow: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.0.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.0.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-19 09:15:35,784 - ERROR - Error in span web scraping agent.agent: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.0.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.0.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-19 09:15:35,800 - ERROR - Error in span web scraping agent.agent: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.0.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.0.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-19 09:15:35,817 - ERROR - Error in span web scraping agent.agent: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.0.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.0.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-19 09:15:35,847 - ERROR - Error in span The task is to extract product details from any ecommerce store page url.
+The task has to collect results from multiple pages urls.task: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.0.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.0.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+2026-09-19 09:15:35,898 - ERROR - Error in span crewai.workflow: Failed to validate structured_output tool response with model AllExtractedProducts: 2 validation errors for AllExtractedProducts
+products.0.product_original_price
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type
+products.0.product_disount_percentage
+  Input should be a valid number [type=float_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/float_type

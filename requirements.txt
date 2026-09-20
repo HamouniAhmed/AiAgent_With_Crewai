@@ -2,3 +2,7 @@ crewai[tools]>=0.95.0
 agentops
 python-dotenv
 jupyter
+google-genai
+tavily-python
+scrapegraph-py
+pydantic
